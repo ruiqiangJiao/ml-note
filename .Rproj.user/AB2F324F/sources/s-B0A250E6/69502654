@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2569649831",
+    "hash" : "0",
     "id" : "69502654",
     "lastKnownWriteTime" : 1528867677,
     "last_content_update" : 1528867677,
     "path" : "E:/项目/个人项目/github/ml-note/02-classification.Rmd",
     "project_path" : "02-classification.Rmd",
     "properties" : {
+        "cursorPosition" : "5,0",
+        "scrollLine" : "0"
     },
     "relative_order" : 7,
     "source_on_save" : false,
