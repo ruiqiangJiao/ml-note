@@ -1,0 +1,30 @@
+# 聚类 {#cluster}
+
+根据训练样中是否包含标签信息，机器学习分为监督学习和无监督学习，聚类算法是典型的无监督学习，其训练样本中只包含样本特征，不包含样本的标签信息。在聚类算法中，利用样本的特征，将具有相似属性的样本划分到同一个类别中。
+
+## K-Means
+
+随机选取 $k$ （预设类别数）个样本作为其实中心点，将其余样本归入相似度较高中心点所在的簇中，在确立当前簇中的样本的均值作为新的中心点，依次循环迭代下去，直至所有的样本所属的类别不在发生变化。如下图 \@ref(fig:kMeanProcess)^[黄文, 王正林. 数据挖掘 : R语言实战[M]. 电子工业出版社, 2014.] 所示:
+
+```{r , 'kMeanProcess' , fig.align='center' , echo=FALSE , fig.cap='k均值示意图'}
+knitr::include_graphics("http://otvt4p6nv.bkt.clouddn.com/k_mean.JPG")
+```
+
+## K-Means++
+
+K-Means 中首先需要确定聚类的个数 $k$ , 这一点对于未知数据具有较大的局限性; 其次在利用 K-Means 算法进行聚类之前，需要初始化 $k$ 个聚类中心， 如果初始化聚类中心选择不好的话，将会最终的聚类效果造成较大的影响。为了解决初始化问题带给 K-Means 算法的问题，2007年由D.Arthur 等人提出的 K-Means++ ^[[Arthur D, Vassilvitskii S. k-means++:the advantages of careful seeding[C] Eighteenth Acm-Siam Symposium on Discrete Algorithms, New Orleans, Louisiana. Society for Industrial and Applied Mathematics, 2007:1027-1035.](http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf)] 针对初始化中心点的选取做了改进。具体如下:
+
+- 从数据集中随机选取一个样本作为初始聚类中心 $C_1$;
+
+- 计算每一个样本与当前聚类中心之间的最短距离 （即与最近的一个聚类中心的距离），若用 $D(x)$ 表示；
+
+- 计算每一个样本被选为下一个聚类中心的概率 $\frac{{D(x)}^2}{\sum_{x  \in X}{D(x)}^2}$, 以概率选择距离最大的样本作为新的聚类中心，重复上面的重复上面的过程，直至 $k$ 个聚类中心被确定下来;
+
+- 其它的步骤和 K-Means 一样。
+
+
+
+
+
+
+

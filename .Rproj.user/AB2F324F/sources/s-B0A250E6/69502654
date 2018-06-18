@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529328641011.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2569649831",
+    "id" : "69502654",
+    "lastKnownWriteTime" : 1528867677,
+    "last_content_update" : 1528867677,
+    "path" : "E:/项目/个人项目/github/ml-note/02-classification.Rmd",
+    "project_path" : "02-classification.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
