@@ -115,7 +115,7 @@
 </div>
 <div id="k-means-1" class="section level2">
 <h2><span class="header-section-number">4.2</span> K-Means++</h2>
-<p>K-Means 中首先需要确定聚类的个数 <span class="math inline">\(k\)</span> , 这一点对于未知数据具有较大的局限性; 其次在利用 K-Means 算法进行聚类之前，需要初始化 <span class="math inline">\(k\)</span> 个聚类中心， 如果初始化聚类中心选择不好的话，将会最终的聚类效果造成较大的影响。为了解决初始化问题带给 K-Means 算法的问题，2007年由D.Arthur 等人提出的 K-Means++<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> 针对初始化中心点的选取做了改进。具体如下:</p>
+<p>K-Means 中首先需要确定聚类的个数 <span class="math inline">\(k\)</span> , 这一点对于未知数据具有较大的局限性; 其次在利用 K-Means 算法进行聚类之前，需要初始化 <span class="math inline">\(k\)</span> 个聚类中心， 如果初始化聚类中心选择不好的话，将会对最终的聚类效果造成较大的影响。为了解决初始化问题带给 K-Means 算法的问题，2007年由D.Arthur 等人提出的 K-Means++<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> 针对初始化中心点的选取做了改进。具体如下:</p>
 <ul>
 <li><p>从数据集中随机选取一个样本作为初始聚类中心 <span class="math inline">\(C_1\)</span>;</p></li>
 <li><p>计算每一个样本与当前聚类中心之间的最短距离 （即与最近的一个聚类中心的距离），若用 <span class="math inline">\(D(x)\)</span> 表示；</p></li>
