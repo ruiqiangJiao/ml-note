@@ -24,7 +24,7 @@
 
 
 
-<meta name="date" content="2018-06-19">
+<meta name="date" content="2018-06-30">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -102,7 +102,7 @@
             <section class="normal" id="section-">
 <div id="cluster" class="section level1">
 <h1><span class="header-section-number">第 4 章</span> 聚类</h1>
-<p>根据训练样中是否包含标签信息，机器学习分为监督学习和无监督学习，聚类算法是典型的无监督学习，其训练样本中只包含样本特征，不包含样本的标签信息。在聚类算法中，利用样本的特征，将具有相似属性的样本划分到同一个类别中。</p>
+<p>根据训练样本中是否包含标签信息，机器学习分为监督学习和无监督学习，聚类算法是典型的无监督学习，其训练样本中只包含样本特征，不包含样本的标签信息。在聚类算法中，利用样本的特征，将具有相似属性的样本划分到同一个类别中。</p>
 <div id="k-means" class="section level2">
 <h2><span class="header-section-number">4.1</span> K-Means</h2>
 <p>随机选取 <span class="math inline">\(k\)</span> （预设类别数）个样本作为起始中心点，将其余样本归入相似度较高中心点所在的簇中，在确立当前簇中的样本的均值作为新的中心点，依次循环迭代下去，直至所有的样本所属的类别不在发生变化。如下图 <a href="cluster.html#fig:kMeanProcess">4.1</a><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> 所示:</p>
